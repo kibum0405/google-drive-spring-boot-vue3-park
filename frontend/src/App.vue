@@ -7,7 +7,7 @@
 </template>
 
 <script>
-import SNSApp from './SNSApp.vue'
+import { VApp, VMain } from 'vuetify/components'
 
 export default {
 
@@ -25,8 +25,8 @@ export default {
     }),
     
     async created() {
-      var path = document.location.href.split("#/")
-      this.urlPath = path[1];
+        var path = document.location.href.split("#/")
+        this.urlPath = path[1];
 
     },
 
